@@ -1,0 +1,127 @@
+EESchema Schematic File Version 4
+LIBS:VHM-rev1-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_C_Receptacle J2
+U 1 1 5DDFE750
+P 1200 1900
+F 0 "J2" H 1307 3167 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 1307 3076 50  0000 C CNN
+F 2 "Connectors_USB:USB_C_Plug_Molex_105444" H 1350 1900 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1350 1900 50  0001 C CNN
+	1    1200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:RJ45 J1
+U 1 1 5DE01CA8
+P 1150 4650
+F 0 "J1" H 1207 5317 50  0000 C CNN
+F 1 "RJ45" H 1207 5226 50  0000 C CNN
+F 2 "Connectors:RJ45_8" V 1150 4675 50  0001 C CNN
+F 3 "~" V 1150 4675 50  0001 C CNN
+	1    1150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U1
+U 1 1 5DE02E3A
+P 2800 5350
+F 0 "U1" H 2800 5675 50  0000 C CNN
+F 1 "TLP127" H 2800 5584 50  0000 C CNN
+F 2 "Housings_SSOP:MFSOP6-4_4.4x3.6mm_Pitch1.27mm" H 2800 5050 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2730 5350 50  0001 L CNN
+	1    2800 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RF_Module:ESP32-WROOM-32 U3
+U 1 1 5DE058E7
+P 9350 2200
+F 0 "U3" H 9350 3781 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 9350 3690 50  0000 C CNN
+F 2 "lib:ESP32-WROOM" H 9350 700 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 9050 2250 50  0001 C CNN
+	1    9350 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5DE08747
+P 4300 4100
+F 0 "R1" H 4370 4146 50  0000 L CNN
+F 1 "R" H 4370 4055 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 4230 4100 50  0001 C CNN
+F 3 "~" H 4300 4100 50  0001 C CNN
+	1    4300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5DE09166
+P 4950 4050
+F 0 "C1" H 5065 4096 50  0000 L CNN
+F 1 "C" H 5065 4005 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4988 3900 50  0001 C CNN
+F 3 "~" H 4950 4050 50  0001 C CNN
+	1    4950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:B340 D1
+U 1 1 5DE056AB
+P 3650 4100
+F 0 "D1" H 3650 4316 50  0000 C CNN
+F 1 "B340" H 3650 4225 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMC" H 3650 3925 50  0001 C CNN
+F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 3650 4100 50  0001 C CNN
+	1    3650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_USB:CH340G U2
+U 1 1 5DE00C24
+P 4500 1950
+F 0 "U2" H 4500 1261 50  0000 C CNN
+F 1 "CH340G" H 4500 1170 50  0000 C CNN
+F 2 "SMD_Packages:SO-16-N" H 4550 1400 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 4150 2750 50  0001 C CNN
+	1    4500 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMG2301L Q1
+U 1 1 5DE0126B
+P 5600 3550
+F 0 "Q1" H 5806 3596 50  0000 L CNN
+F 1 "DMG2301L" H 5806 3505 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5800 3475 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/DMG2301L.pdf" H 5600 3550 50  0001 L CNN
+	1    5600 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5DE03CD4
+P 6250 2400
+F 0 "BT?" H 6368 2496 50  0000 L CNN
+F 1 "Battery_Cell" H 6368 2405 50  0000 L CNN
+F 2 "Battery_Holders:Keystone_1042_1x18650" V 6250 2460 50  0001 C CNN
+F 3 "~" V 6250 2460 50  0001 C CNN
+	1    6250 2400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
