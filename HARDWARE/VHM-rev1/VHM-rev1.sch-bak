@@ -114,14 +114,58 @@ F 3 "https://www.diodes.com/assets/Datasheets/DMG2301L.pdf" H 5600 3550 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT1
 U 1 1 5DE03CD4
 P 6250 2400
-F 0 "BT?" H 6368 2496 50  0000 L CNN
+F 0 "BT1" H 6368 2496 50  0000 L CNN
 F 1 "Battery_Cell" H 6368 2405 50  0000 L CNN
 F 2 "Battery_Holders:Keystone_1042_1x18650" V 6250 2460 50  0001 C CNN
 F 3 "~" V 6250 2460 50  0001 C CNN
 	1    6250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Management:TP4056 U4
+U 1 1 5DE1EF07
+P 7250 4150
+F 0 "U4" H 7250 4617 50  0000 C CNN
+F 1 "TP4056" H 7250 4526 50  0000 C CNN
+F 2 "lib:TP4056_SOP-8-PP" H 7250 3800 50  0001 C CNN
+F 3 "http://beriled.biz/data/files/tp4056new.pdf" H 7250 3600 50  0001 C CNN
+	1    7250 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L fs8205a:FS8205A U5
+U 1 1 5DE1A501
+P 5850 5450
+F 0 "U5" V 5363 5350 60  0000 C CNN
+F 1 "FS8205A" V 5469 5350 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-8_4.4x3mm_Pitch0.65mm" H 6800 5700 60  0001 C CNN
+F 3 "" H 6800 5700 60  0001 C CNN
+	1    5850 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L dw01:DW01 U6
+U 1 1 5DE19887
+P 7500 2150
+F 0 "U6" H 7525 2587 60  0000 C CNN
+F 1 "DW01" H 7525 2481 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 7450 1850 60  0001 C CNN
+F 3 "" H 7450 1850 60  0001 C CNN
+	1    7500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:SB160 D2
+U 1 1 5DE1AC25
+P 2750 4100
+F 0 "D2" H 2750 4316 50  0000 C CNN
+F 1 "SB160" H 2750 4225 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 2750 3925 50  0001 C CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds23022.pdf" H 2750 4100 50  0001 C CNN
+	1    2750 4100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

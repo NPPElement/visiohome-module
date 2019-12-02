@@ -81,17 +81,6 @@ F 3 "~" H 4950 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:B340 D1
-U 1 1 5DE056AB
-P 3650 4100
-F 0 "D1" H 3650 4316 50  0000 C CNN
-F 1 "B340" H 3650 4225 50  0000 C CNN
-F 2 "Diodes_SMD:D_SMC" H 3650 3925 50  0001 C CNN
-F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 3650 4100 50  0001 C CNN
-	1    3650 4100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Interface_USB:CH340G U2
 U 1 1 5DE00C24
 P 4500 1950
@@ -122,6 +111,50 @@ F 1 "Battery_Cell" H 6368 2405 50  0000 L CNN
 F 2 "Battery_Holders:Keystone_1042_1x18650" V 6250 2460 50  0001 C CNN
 F 3 "~" V 6250 2460 50  0001 C CNN
 	1    6250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Management:TP4056 U4
+U 1 1 5DE1EF07
+P 7250 4150
+F 0 "U4" H 7250 4617 50  0000 C CNN
+F 1 "TP4056" H 7250 4526 50  0000 C CNN
+F 2 "lib:TP4056_SOP-8-PP" H 7250 3800 50  0001 C CNN
+F 3 "http://beriled.biz/data/files/tp4056new.pdf" H 7250 3600 50  0001 C CNN
+	1    7250 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L fs8205a:FS8205A U5
+U 1 1 5DE1A501
+P 5850 5450
+F 0 "U5" V 5363 5350 60  0000 C CNN
+F 1 "FS8205A" V 5469 5350 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-8_4.4x3mm_Pitch0.65mm" H 6800 5700 60  0001 C CNN
+F 3 "" H 6800 5700 60  0001 C CNN
+	1    5850 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L dw01:DW01 U6
+U 1 1 5DE19887
+P 7500 2150
+F 0 "U6" H 7525 2587 60  0000 C CNN
+F 1 "DW01" H 7525 2481 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 7450 1850 60  0001 C CNN
+F 3 "" H 7450 1850 60  0001 C CNN
+	1    7500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:SB160 D2
+U 1 1 5DE1AC25
+P 2750 4100
+F 0 "D2" H 2750 4316 50  0000 C CNN
+F 1 "SB160" H 2750 4225 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 2750 3925 50  0001 C CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds23022.pdf" H 2750 4100 50  0001 C CNN
+	1    2750 4100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
